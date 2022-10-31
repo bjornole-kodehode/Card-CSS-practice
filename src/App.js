@@ -3,7 +3,7 @@ import "./styles.css";
 
 export default function App() {
   const [projects, setProjects] = useState([]);
-  let [projectsLength, setProjectsLength] = useState(3);
+  const [projectsLength, setProjectsLength] = useState(4);
 
   let boxes = [
     {
