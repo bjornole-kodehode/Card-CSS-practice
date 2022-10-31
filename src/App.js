@@ -115,14 +115,31 @@ export default function App() {
     if (projectsLength > projects.length) {
       setProjectsLength(projects.length);
     }
-    console.log("projectsLength: ", projectsLength);
+    //console.log("projectsLength: ", projectsLength);
   };
   const handleLoadLess = () => {
     setProjectsLength(projectsLength / 2);
   };
+
+  const handleProjectsLengthChange = (e) => {
+    setProjectsLength(e.target.value);
+    if (("e.target ", e.target.value === "")) {
+      setProjectsLength(4);
+    }
+  };
   console.log("projects.length: ", projects.length);
   return (
     <div className="App">
+      <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
+        <p>Antall prosjekter:</p>
+        <input
+          type="number"
+          min="3"
+          max={projects.length}
+          onChange={handleProjectsLengthChange}
+          placeholder="4"
+        />
+      </div>
       <div className="elements">{elements.slice(0)}</div>
       <div>
         <button
