@@ -94,3 +94,56 @@ button {
 button:hover {
   filter: brightness(1.1);
 }
+
+.starIcon {
+  color: orange;
+  display: flex;
+  padding: 5px;
+}
+
+li:hover {
+  background-color: #40396b;
+  width: 100%;
+}
+
+li button {
+  padding: 0;
+  background: none;
+  color: #b3b4d0;
+}
+
+li {
+  list-style: none;
+  cursor: pointer;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 5px 8px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-container {
+  position: absolute;
+  background: #2c274f;
+  border: 1px solid #f8af31;
+  border-top: none;
+  color: #fff;
+  z-index: 9999999;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  padding: 0px 0px;
+}
+
+ul {
+  overflow: auto;
+  max-height: 201px;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
